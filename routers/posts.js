@@ -10,10 +10,8 @@ router.get("/", (req, res) => {
 
 //show
 router.get("/:id", (req, res) => {
-    const gameId = req.params.id;
-    res.json(myPosts.find((curItem, i) => {
-        return curItem.id === gameId
-    }));
+    const gameId = parseInt(req.params.id);
+    res.json(myPosts.find((curItem, i) => curItem.id === gameId));
 });
 
 //create
