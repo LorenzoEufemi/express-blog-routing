@@ -22,19 +22,19 @@ router.post("/", (req, res) => {
 //update
 router.put("/:id", (req, res) => {
     const gameId = req.params.id;
-    res.send("Qui aggiorno dati di un videogames " + gameId);
+    res.send("Qui aggiorno dati di un post " + gameId);
 });
 
 //modify
 router.patch("/:id", (req, res) => {
     const gameId = req.params.id;
-    res.send("Qui aggiorno solo alcuni dati di un videogames " + gameId);
+    res.send("Qui aggiorno solo alcuni dati di un post " + gameId);
 });
 
 //destroy
 router.delete("/:id", (req, res) => {
     const gameId = req.params.id;
-    res.send("Qui cancello videogames " + gameId);
+    res.send("Qui cancello post " + gameId);
 });
 
 module.exports = router;
